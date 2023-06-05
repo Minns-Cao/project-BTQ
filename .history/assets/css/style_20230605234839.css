@@ -143,27 +143,14 @@ main {
     pointer-events: all;
     display: block;
     width: 100px;
+    height: 100px;
     background-color: transparent;
     color: #fff;
     border: none;
 }
 
-.buttons svg {
-    transition: all .5s;
-}
-
-.buttons svg:hover polygon{
-    fill: #efc10b !important;
-}
-.buttons svg:hover path{
-    stroke: #efc10b !important;
-}
-
-.buttons .next svg:hover {
-    transform: translateX(20px);
-}
-.buttons .prev svg:hover {
-    transform: translateX(-20px);
+.buttons .btn:hover polygon{
+    fill: #d9996b !important;
 }
 
 /* =======================background======================= */

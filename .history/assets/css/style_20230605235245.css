@@ -148,22 +148,14 @@ main {
     border: none;
 }
 
-.buttons svg {
-    transition: all .5s;
-}
-
 .buttons svg:hover polygon{
-    fill: #efc10b !important;
+    fill: differ !important;
+    -webkit-text-stroke: 4px #fff;
+    -webkit-text-fill-color: transparent;
+    mix-blend-mode: difference;
 }
 .buttons svg:hover path{
-    stroke: #efc10b !important;
-}
-
-.buttons .next svg:hover {
-    transform: translateX(20px);
-}
-.buttons .prev svg:hover {
-    transform: translateX(-20px);
+    stroke: #e97019 !important;
 }
 
 /* =======================background======================= */

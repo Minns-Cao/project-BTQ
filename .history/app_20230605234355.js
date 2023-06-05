@@ -105,7 +105,7 @@ function showImgWrap(choose = 0) {
 
     setTimeout(() => {
         isAnimationInProgress = false;
-    }, delayShow + timeAnimationShowImgWrap_Finish + 2500);
+    });
 }
 
 function delete_showImgWrap() {

@@ -148,23 +148,7 @@ main {
     border: none;
 }
 
-.buttons svg {
-    transition: all .5s;
-}
-
-.buttons svg:hover polygon{
-    fill: #efc10b !important;
-}
-.buttons svg:hover path{
-    stroke: #efc10b !important;
-}
-
-.buttons .next svg:hover {
-    transform: translateX(20px);
-}
-.buttons .prev svg:hover {
-    transform: translateX(-20px);
-}
+.buttons .btn:
 
 /* =======================background======================= */
 .background {

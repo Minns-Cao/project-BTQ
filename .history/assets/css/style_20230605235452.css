@@ -149,7 +149,7 @@ main {
 }
 
 .buttons svg {
-    transition: all .5s;
+    transition: all ;
 }
 
 .buttons svg:hover polygon{
@@ -161,9 +161,6 @@ main {
 
 .buttons .next svg:hover {
     transform: translateX(20px);
-}
-.buttons .prev svg:hover {
-    transform: translateX(-20px);
 }
 
 /* =======================background======================= */

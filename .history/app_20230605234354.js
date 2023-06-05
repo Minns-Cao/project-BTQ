@@ -105,7 +105,8 @@ function showImgWrap(choose = 0) {
 
     setTimeout(() => {
         isAnimationInProgress = false;
-    }, delayShow + timeAnimationShowImgWrap_Finish + 2500);
+
+    },)
 }
 
 function delete_showImgWrap() {
@@ -138,7 +139,7 @@ let dataBackground = [
 ];
 
 function changeBackround(choose = 0) {
-    // 1: lùi
+    // 1: lùi 
     // other: tiến
     if (choose === 1) {
         let last_elm = dataBackground.pop();
@@ -213,6 +214,6 @@ document.querySelector(".prev").addEventListener("click", () => {
     }
 });
 
-setInterval(() => {
+setInterval(()=>{
     document.querySelector(".next").click();
-}, 12000);
+},12000)

@@ -148,10 +148,6 @@ main {
     border: none;
 }
 
-.buttons svg {
-    transition: all .5s;
-}
-
 .buttons svg:hover polygon{
     fill: #efc10b !important;
 }
@@ -161,9 +157,6 @@ main {
 
 .buttons .next svg:hover {
     transform: translateX(20px);
-}
-.buttons .prev svg:hover {
-    transform: translateX(-20px);
 }
 
 /* =======================background======================= */
