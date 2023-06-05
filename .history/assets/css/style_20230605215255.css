@@ -1,0 +1,450 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --color-bg1: #24547f;
+    --color-bg2: #463b75;
+    --color-bg3: #d9996b;
+    --color-bg4: #86506c;
+    --color-bg5: #206a54;
+    --color-bg6: #779273;
+    --color-bg7: #e48f92;
+    --color-bg8: #6dbcc5;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.6rem;
+}
+
+/* =======================NAVIGATION======================= */
+main {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.navigation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 30px;
+    z-index: 100;
+}
+
+.navigation .iconBar {
+    position: relative;
+    display: block;
+    width: 70px;
+    height: 60px;
+    color: #000;
+}
+
+.iconBar .lineMid,
+.iconBar .lineTop,
+.iconBar .lineBot {
+    position: absolute;
+    top: 25px;
+    left: 0px;
+    height: 2px;
+    width: 75%;
+    background-color: #fff;
+    box-shadow: 3px 3px 0 rgb(0 0 0 / 10%);
+    transition: all 0.3s ease-in-out;
+}
+
+.iconBar .lineMid {
+    opacity: 1;
+    visibility: visible;
+}
+
+.iconBar .lineTop {
+    top: 15px;
+    left: 5px;
+    width: 40%;
+}
+
+.iconBar .lineBot {
+    top: 35px;
+    left: 5px;
+    width: 40%;
+}
+
+.navigation .iconBar:hover .lineMid {
+    width: 50%;
+}
+
+.navigation .iconBar:hover .lineTop,
+.navigation .iconBar:hover .lineBot {
+    width: 60%;
+}
+
+/* nav onClick */
+
+.navigation .onClick.iconBar .lineMid {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.navigation .onClick.iconBar .lineTop,
+.navigation .onClick.iconBar .lineBot {
+    top: 25px;
+    left: 10px;
+    width: 50%;
+}
+
+.navigation .onClick.iconBar .lineTop {
+    transform: rotate(45deg);
+}
+.navigation .onClick.iconBar .lineBot {
+    transform: rotate(-45deg);
+}
+
+.navigation .onClick.iconBar:hover .lineTop,
+.navigation .onClick.iconBar:hover .lineBot {
+    top: 25px;
+    width: 50%;
+}
+
+.navigation .onClick.iconBar:hover .lineTop {
+    left: 11px;
+    transform: rotate(90deg);
+    box-shadow: none;
+}
+.navigation .onClick.iconBar:hover .lineBot {
+    left: 9px;
+    transform: rotate(-90deg);
+    box-shadow: none;
+}
+/* =======================buttons======================= */
+.buttons {
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 92vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    z-index: 500;
+}
+
+.buttons .btn {
+    pointer-events: all;
+    display: block;
+    width: 100px;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+}
+
+/* =======================background======================= */
+.background {
+    position: absolute;
+    display: block;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.background {
+    background-color: var(--color-bg8);
+    transition: background-color ease-in-out 0.3s;
+    transition-delay: 0.3s;
+}
+
+.background .themes {
+    animation: scale linear 30s infinite;
+}
+
+/* =======================Title======================= */
+.slide .title {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide .string {
+    display: block;
+    overflow: hidden;
+}
+
+.slide .char {
+    display: inline-block;
+    height: 10vw;
+    font-size: 10vw;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 1;
+    text-align: center;
+    -webkit-text-stroke: 4px #fff;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    mix-blend-mode: overlay;
+    user-select: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.hide_char {
+    animation: hide_char ease-in-out .3s 1;
+}
+
+.charAnimation_toTop {
+    animation: charAnimation_toTop ease-out 0.6s 1;
+}
+.charAnimation_toBottom {
+    animation: charAnimation_toBottom ease-out 0.6s 1;
+}
+/* =======================Slide-img-wrap======================= */
+
+.slide-img-wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-25deg);
+    display: grid;
+    grid-template-areas:
+        "img1 img2 img2"
+        "img3 img3 img4";
+    gap: 1px;
+    border-radius: 15px;
+    max-width: 1404px;
+    overflow: hidden;
+}
+
+.slide-img-wrap .img-wrap {
+    display: block;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.slide-img-wrap .img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.overflowBox {
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.BoxItem1 {
+    grid-area: img1;
+    width: calc(700 / 800 * 25vw);
+    max-width: 655px;
+}
+.BoxItem2 {
+    grid-area: img2;
+    width: calc(1500 / 800 * 25vw);
+    max-width: 1404px;
+}
+.BoxItem3 {
+    grid-area: img3;
+    width: calc(1500 / 800 * 25vw);
+    max-width: 1404px;
+}
+.BoxItem4 {
+    grid-area: img4;
+    width: calc(700 / 800 * 25vw);
+    max-width: 655px;
+}
+.slide-img-1 {
+    visibility: hidden;
+}
+.slide-img-2 {
+    visibility: hidden;
+}
+.slide-img-3 {
+    visibility: hidden;
+}
+.slide-img-4 {
+    visibility: hidden;
+}
+
+.pic-img-show {
+    box-shadow: 30px 20px 40px 0 rgb(0 0 0 / 10%);
+    transition: box-shadow 0.3s ease;
+}
+
+.show_img1 {
+    animation: show_img1 ease-in-out 0.5s 1 forwards;
+}
+.show_img2 {
+    animation: show_img2 ease-in-out 0.5s 1 forwards;
+    animation-delay: 0.1s;
+}
+.show_img3 {
+    animation: show_img3 ease-in-out 0.5s 1 forwards;
+    animation-delay: 0.15s;
+}
+.show_img4 {
+    animation: show_img4 ease-in-out 0.5s 1 forwards;
+    animation-delay: 0.18s;
+}
+
+.hide_img1 {
+    animation: hide_img1 ease-in-out 0.5s 1 forwards;
+}
+.hide_img2 {
+    animation: hide_img2 ease-in-out 0.5s 1 forwards;
+    animation-delay: 0.1s;
+}
+.hide_img3 {
+    animation: hide_img3 ease-in-out 0.5s 1 forwards;
+    animation-delay: 0.15s;
+}
+.hide_img4 {
+    animation: hide_img4 ease-in-out 0.5s 1 forwards;
+    animation-delay: 0.18s;
+}
+
+@keyframes show_img1 {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+    }
+}
+@keyframes hide_img1 {
+    from {
+        visibility: visible;
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(100%);
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes show_img2 {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+}
+@keyframes hide_img2 {
+    from {
+        visibility: visible;
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(-100%);
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes show_img3 {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+    }
+}
+@keyframes hide_img3 {
+    from {
+        visibility: visible;
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(-100%);
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes show_img4 {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+}
+@keyframes hide_img4 {
+    from {
+        visibility: visible;
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(-100%);
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes charAnimation_toBottom {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0%);
+    }
+}
+@keyframes charAnimation_toTop {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0%);
+    }
+}
+@keyframes hide_char {
+    from {
+        visibility: visible;
+        opacity: 1;
+    }
+    to {
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+@keyframes scale {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(2);
+    }
+}

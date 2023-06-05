@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>BTQ</title>
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Reset CSS -->
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <!-- Style CSS -->
+        <link rel="stylesheet" href="./assets/css/style.css" />
+    </head>
+    <body>
+        <main>
+            <nav class="navigation">
+                <img src="./assets/images/icon-logo.svg" alt="" class="logo" />
+                <div class="navigationBar">
+                    <div class="iconBar" onclick="activeIconMenuBar(this)">
+                        <div class="lineTop"></div>
+                        <div class="lineMid"></div>
+                        <div class="lineBot"></div>
+                    </div>
+                </div>
+            </nav>
+            <div class="buttons">
+                <button class="btn prev">
+                    <svg x="0px" y="0px" viewBox="0 0 80 80">
+                        <path
+                            d="M82 40h-40"
+                            stroke="currentColor"
+                            stroke-width="2"
+                        ></path>
+                        <polygon
+                            fill="currentColor"
+                            points="46,25.3 48.4,27.7 38.2,37.9 38.2,41.3 48.4,51.5 46,53.9 31.7,39.6 "
+                        ></polygon>
+                    </svg>
+                </button>
+                <button class="btn next">
+                    <svg x="0px" y="0px" viewBox="0 0 80 80">
+                        <path
+                            d="M0 40h40"
+                            stroke="currentColor"
+                            stroke-width="2"
+                        ></path>
+                        <polygon
+                            fill="currentColor"
+                            points="36.1,25.3 33.7,27.7 43.9,37.9 43.9,41.3 33.7,51.5 36.1,53.9 50.4,39.6 "
+                        ></polygon>
+                    </svg>
+                </button>
+            </div>
+            <div class="background">
+                <img src="./assets/images/p1b.svg" alt="" class="themes" />
+            </div>
+            <div class="slide">
+                <!-- item1 -->
+                <div class="slideItem item1">
+                    <div class="title">
+                        <div class="string" data-title="HEALTH">
+                            <span class="char">H</span>
+                            <span class="char">E</span>
+                            <span class="char">A</span>
+                            <span class="char">L</span>
+                            <span class="char">T</span>
+                            <span class="char">H</span>
+                        </div>
+                        <div class="string" data-title="CARE">
+                            <span class="char">C</span>
+                            <span class="char">A</span>
+                            <span class="char">R</span>
+                            <span class="char">E</span>
+                        </div>
+                    </div>
+                    <div class="slide-img-wrap">
+                        <div class="overflowBox BoxItem1">
+                            <div class="img-wrap slide-img-1">
+                                <img
+                                    src="./assets/images/1.jpg"
+                                    alt=""
+                                    class="img"
+                                />
+                            </div>
+                        </div>
+                        <div class="overflowBox BoxItem2">
+                            <div class="img-wrap slide-img-2">
+                                <img
+                                    src="./assets/images/2.jpg"
+                                    alt=""
+                                    class="img"
+                                />
+                            </div>
+                        </div>
+                        <div class="overflowBox BoxItem3">
+                            <div class="img-wrap slide-img-3">
+                                <img
+                                    src="./assets/images/3.jpg"
+                                    alt=""
+                                    class="img"
+                                />
+                            </div>
+                        </div>
+                        <div class="overflowBox BoxItem4">
+                            <div class="img-wrap slide-img-4">
+                                <img
+                                    src="./assets/images/4.jpg"
+                                    alt=""
+                                    class="img"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- item2 -->
+                <div class="slideItem item2">
+                    <div class="title">
+                        <div class="string" data-title="GOLF">
+                            <span class="char">G</span>
+                            <span class="char">O</span>
+                            <span class="char">L</span>
+                            <span class="char">F</span>
+                        </div>
+                        <div class="string" data-title="&RESOFT">
+                            <span class="char">&</span>
+                            <span class="char">R</span>
+                            <span class="char">E</span>
+                            <span class="char">S</span>
+                            <span class="char">O</span>
+                            <span class="char">F</span>
+                            <span class="char">T</span>
+                        </div>
+                    </div>
+                    <div class="slide-img-wrap">
+                        <div class="overflowBox BoxItem1">
+                            <div class="img-wrap slide-img-1">
+                                <img
+                                    src="./assets/images/5.jpg"
+                                    alt=""
+                                    class="img"
+                                />
+                            </div>
+                        </div>
+                        <div class="overflowBox BoxItem2">
+                            <div class="img-wrap slide-img-2">
+                                <img
+                                    src="./assets/images/6.jpg"
+                                    alt=""
+                                    class="img"
+                                />
+                            </div>
+                        </div>
+                        <div class="overflowBox BoxItem3">
+                            <div class="img-wrap slide-img-3">
+                                <img
+                                    src="./assets/images/7.jpg"
+                                    alt=""
+                                    class="img"
+                                />
+                            </div>
+                        </div>
+                        <div class="overflowBox BoxItem4">
+                            <div class="img-wrap slide-img-4">
+                                <img
+                                    src="./assets/images/8.jpg"
+                                    alt=""
+                                    class="img"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- item3 -->
+                <div class="slideItem item3">
+                    <div class="title">
+                        <div class="string" data-title="RESTAURENT">
+                            <span class="char">R</span>
+                            <span class="char">E</span>
+                            <span class="char">S</span>
+                            <span class="char">T</span>
+                            <span class="char">A</span>
+                            <span class="char">R</span>
+                            <span class="char">E</span>
+                            <span class="char">N</span>
+                            <span class="char">T</span>
+                        </div>
+                        <div class="string" data-title="&HOTEL">
+                            <span class="char">&</span>
+                            <span class="char">H</span>
+                            <span class="char">O</span>
+                            <span class="char">T</span>
+                            <span class="char">E</span>
+                            <span class="char">L</span>
+                        </div>
+                    </div>
+                    <div class="slide-img-wrap">
+                        <div class="overflowBox BoxItem1">
+                            <div class="img-wrap slide-img-1">
+                                <img
+                                    src="./assets/images/9.jpg"
+                                    alt=""
+                                    class="img"
+                                />
+                            </div>
+                        </div>
+                        <div class="overflowBox BoxItem2">
+                            <div class="img-wrap slide-img-2">
+                                <img
+                                    src="./assets/images/10.jpg"
+                                    alt=""
+                                    class="img"
+                                />
+                            </div>
+                        </div>
+                        <div class="overflowBox BoxItem3">
+                            <div class="img-wrap slide-img-3">
+                                <img
+                                    src="./assets/images/11.jpg"
+                                    alt=""
+                                    class="img"
+                                />
+                            </div>
+                        </div>
+                        <div class="overflowBox BoxItem4">
+                            <div class="img-wrap slide-img-4">
+                                <img
+                                    src="./assets/images/12.jpg"
+                                    alt=""
+                                    class="img"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- item4 -->
+                <div class="slideItem item4">
+                    <div class="title">
+                        <div class="string" data-title="BANK">
+                            <span class="char">B</span>
+                            <span class="char">A</span>
+                            <span class="char">N</span>
+                            <span class="char">K</span>
+                        </div>
+                        <div class="string" data-title="&FINANCE">
+                            <span class="char">&</span>
+                            <span class="char">F</span>
+                            <span class="char">I</span>
+                            <span class="char">N</span>
+                            <span class="char">A</span>
+                            <span class="char">C</span>
+                            <span class="char">E</span>
+                        </div>
+                    </div>
+                    <div class="slide-img-wrap">
+                        <div class="overflowBox BoxItem1">
+                            <div class="img-wrap slide-img-1">
+                                <img
+                                    src="./assets/images/13.jpg"
+                                    alt=""
+                                    class="img"
+                                />
+                            </div>
+                        </div>
+                        <div class="overflowBox BoxItem2">
+                            <div class="img-wrap slide-img-2">
+                                <img
+                                    src="./assets/images/14.jpg"
+                                    alt=""
+                                    class="img"
+                                />
+                            </div>
+                        </div>
+                        <div class="overflowBox BoxItem3">
+                            <div class="img-wrap slide-img-3">
+                                <img
+                                    src="./assets/images/15.jpg"
+                                    alt=""
+                                    class="img"
+                                />
+                            </div>
+                        </div>
+                        <div class="overflowBox BoxItem4">
+                            <div class="img-wrap slide-img-4">
+                                <img
+                                    src="./assets/images/16.jpg"
+                                    alt=""
+                                    class="img"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- item5 -->
+                <div class="slideItem item5">
+                    <div class="title">
+                        <div class="string" data-title="INTERACTIVE">
+                            <span class="char">I</span>
+                            <span class="char">N</span>
+                            <span class="char">T</span>
+                            <span class="char">E</span>
+                            <span class="char">R</span>
+                            <span class="char">A</span>
+                            <span class="char">C</span>
+                            <span class="char">T</span>
+                            <span class="char">I</span>
+                            <span class="char">V</span>
+                            <span class="char">E</span>
+                        </div>
+                        <div class="string" data-title="MEDIA">
+                            <span class="char">M</span>
+                            <span class="char">E</span>
+                            <span class="char">D</span>
+                            <span class="char">I</span>
+                            <span class="char">A</span>
+                        </div>
+                    </div>
+                    <div class="slide-img-wrap">
+                        <div class="overflowBox BoxItem1">
+                            <div class="img-wrap slide-img-1">
+                                <img
+                                    src="./assets/images/17.jpg"
+                                    alt=""
+                                    class="img"
+                                />
+                            </div>
+                        </div>
+                        <div class="overflowBox BoxItem2">
+                            <div class="img-wrap slide-img-2">
+                                <img
+                                    src="./assets/images/18.jpg"
+                                    alt=""
+                                    class="img"
+                                />
+                            </div>
+                        </div>
+                        <div class="overflowBox BoxItem3">
+                            <div class="img-wrap slide-img-3">
+                                <img
+                                    src="./assets/images/19.jpg"
+                                    alt=""
+                                    class="img"
+                                />
+                            </div>
+                        </div>
+                        <div class="overflowBox BoxItem4">
+                            <div class="img-wrap slide-img-4">
+                                <img
+                                    src="./assets/images/20.jpg"
+                                    alt=""
+                                    class="img"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- item6 -->
+                <div class="slideItem item6">
+                    <div class="title">
+                        <div class="string" data-title="CONSUMER">
+                            <span class="char">C</span>
+                            <span class="char">O</span>
+                            <span class="char">S</span>
+                            <span class="char">U</span>
+                            <span class="char">M</span>
+                            <span class="char">E</span>
+                            <span class="char">R</span>
+                        </div>
+                        <div class="string" data-title="GOODS">
+                            <span class="char">G</span>
+                            <span class="char">O</span>
+                            <span class="char">O</span>
+                            <span class="char">D</span>
+                            <span class="char">S</span>
+                        </div>
+                    </div>
+                    <div class="slide-img-wrap">
+                        <div class="overflowBox BoxItem1">
+                            <div class="img-wrap slide-img-1">
+                                <img
+                                    src="./assets/images/21.jpg"
+                                    alt=""
+                                    class="img"
+                                />
+                            </div>
+                        </div>
+                        <div class="overflowBox BoxItem2">
+                            <div class="img-wrap slide-img-2">
+                                <img
+                                    src="./assets/images/22.jpg"
+                                    alt=""
+                                    class="img"
+                                />
+                            </div>
+                        </div>
+                        <div class="overflowBox BoxItem3">
+                            <div class="img-wrap slide-img-3">
+                                <img
+                                    src="./assets/images/23.jpg"
+                                    alt=""
+                                    class="img"
+                                />
+                            </div>
+                        </div>
+                        <div class="overflowBox BoxItem4">
+                            <div class="img-wrap slide-img-4">
+                                <img
+                                    src="./assets/images/24.jpg"
+                                    alt=""
+                                    class="img"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- item7 -->
+                <div class="slideItem item7">
+                    <div class="title">
+                        <div class="string" data-title="REAL">
+                            <span class="char">R</span>
+                            <span class="char">E</span>
+                            <span class="char">A</span>
+                            <span class="char">L</span>
+                        </div>
+                        <div class="string" data-title="ESTATE">
+                            <span class="char">E</span>
+                            <span class="char">S</span>
+                            <span class="char">T</span>
+                            <span class="char">A</span>
+                            <span class="char">T</span>
+                            <span class="char">E</span>
+                            <span class="char">E</span>
+                        </div>
+                    </div>
+                    <div class="slide-img-wrap">
+                        <div class="overflowBox BoxItem1">
+                            <div class="img-wrap slide-img-1">
+                                <img
+                                    src="./assets/images/25.jpg"
+                                    alt=""
+                                    class="img"
+                                />
+                            </div>
+                        </div>
+                        <div class="overflowBox BoxItem2">
+                            <div class="img-wrap slide-img-2">
+                                <img
+                                    src="./assets/images/26.jpg"
+                                    alt=""
+                                    class="img"
+                                />
+                            </div>
+                        </div>
+                        <div class="overflowBox BoxItem3">
+                            <div class="img-wrap slide-img-3">
+                                <img
+                                    src="./assets/images/27.jpg"
+                                    alt=""
+                                    class="img"
+                                />
+                            </div>
+                        </div>
+                        <div class="overflowBox BoxItem4">
+                            <div class="img-wrap slide-img-4">
+                                <img
+                                    src="./assets/images/28.jpg"
+                                    alt=""
+                                    class="img"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- item4 -->
+                <div class="slideItem item4">
+                    <div class="title">
+                        <div class="string" data-title="BANK">
+                            <span class="char">B</span>
+                            <span class="char">A</span>
+                            <span class="char">N</span>
+                            <span class="char">K</span>
+                        </div>
+                        <div class="string" data-title="&FINANCE">
+                            <span class="char">&</span>
+                            <span class="char">F</span>
+                            <span class="char">I</span>
+                            <span class="char">N</span>
+                            <span class="char">A</span>
+                            <span class="char">C</span>
+                            <span class="char">E</span>
+                        </div>
+                    </div>
+                    <div class="slide-img-wrap">
+                        <div class="overflowBox BoxItem1">
+                            <div class="img-wrap slide-img-1">
+                                <img
+                                    src="./assets/images/13.jpg"
+                                    alt=""
+                                    class="img"
+                                />
+                            </div>
+                        </div>
+                        <div class="overflowBox BoxItem2">
+                            <div class="img-wrap slide-img-2">
+                                <img
+                                    src="./assets/images/14.jpg"
+                                    alt=""
+                                    class="img"
+                                />
+                            </div>
+                        </div>
+                        <div class="overflowBox BoxItem3">
+                            <div class="img-wrap slide-img-3">
+                                <img
+                                    src="./assets/images/15.jpg"
+                                    alt=""
+                                    class="img"
+                                />
+                            </div>
+                        </div>
+                        <div class="overflowBox BoxItem4">
+                            <div class="img-wrap slide-img-4">
+                                <img
+                                    src="./assets/images/16.jpg"
+                                    alt=""
+                                    class="img"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="./app.js"></script>
+    </body>
+</html>
