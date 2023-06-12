@@ -1,0 +1,17 @@
+.contentBlock1 {
+    width: 100%;
+    background: linear-gradient(270deg,#ffb80c 50%,#ffa400 100%);
+}
+
+.contentBlock1 .obj-bg {
+    width: 100%;
+}
+
+.contentBlock2 {
+    width: 100%;
+    background: linear-gradient(270deg,#ffb80c 50%,#34ed17 100%);
+}
+
+.contentBlock2 .obj-bg {
+    width: 100%;
+}
