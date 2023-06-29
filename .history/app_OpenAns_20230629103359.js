@@ -48,23 +48,7 @@ thisBox_list.forEach((thisBox) => {
     thisBox.style.setProperty("--contentWidth", `${-widthContent + 9.5}px`);
 });
 
-// ======================EnterButton=========================
-let objIcon = document.querySelector(".contentBlock1 .obj-icon");
-objIcon.addEventListener("mousemove", (e) => {
-    let xValue = e.clientX;
-    let yValue = e.clientY;
-    let rectOfobjIcon = objIcon.getBoundingClientRect();
-    let yValueBtn = rectOfobjIcon.top + rectOfobjIcon.height / 2;
-    let xValueBtn = rectOfobjIcon.left + rectOfobjIcon.width / 2;
-    let speed = 0.125;
-    objIcon.style.transform = `translate(${-(xValue - xValueBtn) * speed}px,${
-        -(yValue - yValueBtn) * speed
-    }px) `;
-});
 
-objIcon.addEventListener("mouseout", () => {
-    objIcon.style.transform = `translate(0,0)`;
-});
 // ======================ScrollAnimation=========================
 
 function moveNav(target) {
@@ -101,23 +85,24 @@ window.addEventListener("scroll", (e) => {
     moveNav(targetScroll);
 });
 
+// =====================ScrollAnimation=========================
 function ScrollAnimation(elm, distance, speed, trend, first) {
     console.log("run");
     window.addEventListener("scroll", function () {
+        console.log(distance, speed, trend);
         //khoảng di chuyển
         let x = (window.innerHeight - elm.getBoundingClientRect().top) * speed;
-
-        //xử lý bug phần tử đầu tiên khi scroll
-        if(first === "true") {
-            x = x - (window.innerHeight * speed);
-        }
-
         //giới hạn di chuyển từ 0 tới distance
         let movePos = Math.max(0, Math.min(distance, x));
 
-        //gán giá trị transform cho elm
         if (trend === "down" || trend === undefined) {
+            
+            if(first === "true") {
                 elm.style.transform = `translateY(${movePos}px)`;
+                console.log(`translateY(${movePos}px)`);
+            } else {
+                elm.style.transform = `translateY(${movePos}px)`;
+            }
         } else if (trend === "up") {
             elm.style.transform = `translateY(${-(movePos - distance)}px)`;
         }
@@ -130,6 +115,6 @@ list_scrollElm.forEach((scrollElm) => {
     let distance = scrollElm.dataset.distance;
     let speed = scrollElm.dataset.speed;
     let trend = scrollElm.dataset.trend;
-    let first = scrollElm.dataset.first;
-    ScrollAnimation(scrollElm, distance, speed, trend, first);
+    let first = scrollElm.dataset.
+    ScrollAnimation(scrollElm, distance, speed, trend);
 });

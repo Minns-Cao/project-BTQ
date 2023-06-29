@@ -101,6 +101,7 @@ window.addEventListener("scroll", (e) => {
     moveNav(targetScroll);
 });
 
+// =====================ScrollAnimation=========================
 function ScrollAnimation(elm, distance, speed, trend, first) {
     console.log("run");
     window.addEventListener("scroll", function () {
