@@ -1,0 +1,36 @@
+/* ==========================imgFirst============================= */
+body{
+    back
+}
+.thumb {
+    width: 100vw;
+}
+
+.details-title-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 40vh;
+}
+
+.details-title-name .icon {
+    width: 50px;
+    height: 50px;
+    color: #fff;
+}
+
+
+
+#myIframe {
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000000;
+    background-color: rebeccapurple;
+    overflow: hidden;
+}

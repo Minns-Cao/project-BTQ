@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>BTQ</title>
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Reset CSS -->
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <!-- Style CSS -->
+        <link rel="stylesheet" href="./assets/css/headerFooter.css" />
+        <link rel="stylesheet" href="./assets/css/styleCustomer.css" />
+    </head>
+    <body>
+        <header>
+            <nav class="navigation">
+                <div class="box">
+                    <img
+                        src="./assets/images/icon-logo.svg"
+                        alt=""
+                        class="logo"
+                    />
+                    <span class="targetPage">
+                        <img
+                            src="./assets/images/imgOpenAns/dot.svg"
+                            alt=""
+                            class="dot"
+                        />
+                        <p class="namePage">Khách Hàng</p>
+                    </span>
+                </div>
+
+                <div class="navigationBar">
+                    <div class="lang">VI</div>
+                    <div class="iconBar" onclick="activeIconMenuBar(this)">
+                        <div class="background"></div>
+                        <div class="lineTop"></div>
+                        <div class="lineMid"></div>
+                        <div class="lineBot"></div>
+                    </div>
+                </div>
+                <div class="menu">
+                    <div class="bg-menu">
+                        <div class="color-bg-menu"></div>
+                    </div>
+                    <ul class="main-menu">
+                        <a href="./index.html">
+                            <li class="menuItem iconHome">
+                                <svg x="0px" y="0px" viewBox="0 0 50 36">
+                                    <path
+                                        fill="currentColor"
+                                        d="M25,0 15.017,10 15.017,6 7.031,6 7.031,18 0,25.043 1.412,26.457 25,2.828 48.588,26.457 50,25.043z"
+                                    ></path>
+                                    <path
+                                        fill="currentColor"
+                                        d="M7.031,26 7,36 42.896,36 42.896,26 25,8z"
+                                    ></path>
+                                </svg>
+                            </li>
+                        </a>
+                        <a href="./openAns.html"
+                            ><li class="menuItem">Lời Ngỏ</li></a
+                        >
+                        <a href="./service.html"
+                            ><li class="menuItem">Dịch Vụ</li></a
+                        >
+                        <a href="#!"><li class="menuItem">Khách Hàng</li></a>
+                        <a href="./contacts.html"><li class="menuItem">Liên Hệ</li></a>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="contentBlock1">
+                <div
+                    class="contentBox scrollElm"
+                    data-distance="250"
+                    data-speed="0.2"
+                    data-trend="down"
+                    data-first="true"
+                >
+                    <img
+                        src="./assets/images/imgContacts/contact_svg2.svg"
+                        alt=""
+                        class="obj-bg"
+                    />
+                    <div class="obj-icon">
+                        <img
+                            src="./assets/images/imgContacts/contact_svg.svg"
+                            alt=""
+                            class="icon"
+                        />
+                    </div>
+                    <div class="textBanner">
+                        <div class="textRow">
+                            <div class="thisBox" style="--contentWidth: 0px">
+                                <strong>COOPERATION</strong>
+                                CONTACT<large>BTQ</large>COLLABORATION
+                                <strong>COOPERATION</strong>
+                                CONTACT<large>BTQ</large>COLLABORATION
+                            </div>
+                        </div>
+                        <div class="textRow">
+                            <div class="thisBox" style="--contentWidth: 10px">
+                                <large>3GRAPHIC</large>TEAMWORK
+                                <strong>COMPANION</strong>
+                                <large>3GRAPHIC</large>TEAMWORK
+                                <strong>COMPANION</strong>
+                            </div>
+                        </div>
+                        <div class="textRow">
+                            <div class="thisBox" style="--contentWidth: 20px">
+                                PARTNERS<large>THANK YOU</large>SUCCESSFUL
+                                <strong>DEVELOPMENT</strong> PARTNERS<large
+                                    >THANK YOU</large
+                                >SUCCESSFUL <strong>DEVELOPMENT</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contentBlock2">
+                <div class="boxCustomer">
+                    <p class="name"></p>
+                    <p class="label">N.O.H</p>
+                    <a class="imageLink">
+                        <img src="" alt="" class="thumb">
+                    </a>
+                </div>
+                <div class="boxCustomer">
+                    <p class="name"></p>
+                    <div class="imageLink"></div>
+                </div>
+                <div class="boxCustomer last">
+                    <p class="name"></p>
+                    <div class="imageLink"></div>
+                </div>
+                <div class="boxCustomer last">
+                    <p class="name"></p>
+                    <div class="imageLink"></div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="contentBlockFooter">
+                <div
+                    class="contentBox scrollElm"
+                    data-distance="70"
+                    data-speed="0.15"
+                    data-trend="up"
+                >
+                    <a href="#!" class="facebookLink">
+                        <svg x="0px" y="0px" viewBox="0 0 40 50">
+                            <path
+                                fill="currentColor"
+                                d="M27.4,11.1h-5V7.8c0-1.2,0.8-1.5,1.4-1.5c0.6,0,3.5,0,3.5,0V0.8h-4.9c-5.4,0-6.7,4.1-6.7,6.7v3.6h-3.1v5.6
+                            h3.1c0,7.2,0,15.9,0,15.9h6.6c0,0,0-8.8,0-15.9h4.4L27.4,11.1z"
+                            ></path>
+                        </svg>
+                    </a>
+                    <p class="copyRight">
+                        2004 - 2023 © <strong>BTQ</strong> COMPANY
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <script src="./app_OpenAns.js"></script>
+    </body>
+</html>

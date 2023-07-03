@@ -1,0 +1,24 @@
+/* ==========================imgFirst============================= */
+
+.thumb {
+    width: 100vw;
+}
+
+.details-title-name {
+    w
+    height: 40vh;
+}
+
+
+
+#myIframe {
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000000;
+    background-color: rebeccapurple;
+    overflow: hidden;
+}

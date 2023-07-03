@@ -1,0 +1,343 @@
+/* ==========================contentBlock1============================= */
+
+.contentBlock1 {
+    position: relative;
+    width: 100%;
+    background: #f9db3e;
+    overflow: hidden;
+}
+
+.contentBox {
+    transition: all 0.1s ease;
+}
+
+.contentBlock4 .contentBox {
+    transition: all 0.3s linear;
+}
+
+.contentBlock1 .obj-bg {
+    width: 100%;
+}
+
+.contentBlock1 .obj-icon {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    transition: all 5s cubic-bezier(0.17, 0.74, 0.34, 1.19);
+}
+
+.contentBlock1 .obj-icon img {
+    width: 100vw;
+    height: 100vh;
+}
+
+/* text benner */
+.contentBlock1 .textBanner {
+    position: absolute;
+    content: "";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    transform: translateY(-30px);
+}
+
+.contentBlock1 .textBanner .thisBox {
+    width: max-content;
+    --width: max-content;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 10vw;
+    font-weight: 700;
+    line-height: 1;
+    display: block;
+    padding: 0 2vw;
+    white-space: nowrap;
+}
+
+.contentBlock1 .textRow:nth-child(1) .thisBox {
+    animation: runText_toLeft 40s linear infinite;
+}
+.contentBlock1 .textRow:nth-child(1) {
+    transform: translateY(50px);
+}
+.contentBlock1 .textRow:nth-child(2) .thisBox {
+    animation: runText_toLeft 30s linear infinite;
+}
+.contentBlock1 .textRow:nth-child(2) {
+    transform: translateY();
+}
+
+.contentBlock1 .textRow:nth-child(3) .thisBox {
+    animation: runText_toRight 35s linear infinite;
+}
+
+.contentBlock1 .textRow:nth-child(3) {
+    transform: translateY(-30px);
+}
+
+.contentBlock1 .textBanner .thisBox large {
+    font-size: 150%;
+    -webkit-text-stroke: 4px #fff;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.contentBlock1 .textBanner .thisBox strong {
+    font-weight: 900;
+    -webkit-text-stroke: 4px #fff;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+@keyframes runText_toLeft {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(calc(var(--contentWidth)));
+    }
+}
+@keyframes runText_toRight {
+    from {
+        transform: translateX(calc(var(--contentWidth)));
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+/* ==========================contentBlock2============================= */
+.contentBlock2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 90vh;
+    background-color: #f9db3e;
+}
+
+.contentBlock2::before {
+    position: absolute;
+    display: block;
+    content: "";
+    background-color: #f9db3e;
+    width: 100%;
+    height: 7vw;
+    transform: skewY(-3deg);
+    left: 0;
+    bottom: -5vh;
+    z-index: 10;
+}
+
+.contentBlock2::after {
+    position: absolute;
+    display: block;
+    content: "";
+    background-color: #f9db3e;
+    width: 100%;
+    height: 7vw;
+    transform: skewY(-3deg);
+    top: -3.5vw;
+    left: 0;
+    z-index: 10;
+}
+
+
+.contentBlock2 .pic-svg {
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    position: absolute;
+}
+
+.contentBlock2 .pic-svg img {
+    height: 100%;
+    transform: scale(1.25) translateY(10vh);
+}
+
+.contentBlock2 .contentBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #444;
+    margin: -50vh 0 0 -45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 11;
+}
+
+.contentBlock2 .contentBox h2 {
+    font-size: 5vw;
+    font-weight: 100;
+    line-height: 1.2;
+    letter-spacing: 0;
+    margin: 20px 0;
+}
+
+.contentBlock2 .contentBox h3 {
+    width: 1280px;
+    font-size: 24px;
+    line-height: 1.4;
+    font-weight: 900;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.contentBlock2 .contentBox li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1vh;
+}
+
+.contentBlock2 .contentBox li span {
+    vertical-align: middle;
+}
+
+.contentBlock2 .contentBox li svg {
+    width: 30px;
+    height: 30px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.contentBlock2 .contentBox li > p {
+    font-weight: 400;
+    font-size: 115%;
+    margin: 0 -5px;
+    padding: 5px;
+    vertical-align: middle;
+}
+
+.contentBlock2 .contentBox li a {
+    font-size: 120%;
+    margin: 0 5px 10px 0;
+    padding: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    color: currentColor;
+    text-decoration: none;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+/* ==========================contentBlock4============================= */
+
+.contentBlock3 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 90vh;
+    background-image: url(../images/imgContacts/bg.png);
+    background-size: cover;
+}
+
+.contentBlock3::before {
+    position: absolute;
+    content: "";
+    pointer-events: none;
+    background-color: #f9db3e;
+    width: 100%;
+    height: 6vw;
+    transform: skewY(-3deg);
+    top: -3vw;
+    left: 0;
+}
+
+.contentBlock3::after {
+    position: absolute;
+    content: "";
+    pointer-events: none;
+    background-color: #d9996b;
+    width: 100%;
+    height: 6vw;
+    transform: skewY(3deg);
+    left: 0;
+    bottom: -3vw;
+    z-index: 10;
+}
+
+.contentBlock3 .contentBox {
+    position: absolute;
+    margin-top: 10px;
+    max-width: 910px;
+    color: #444;
+    z-index: 100;
+}
+
+.contentBlock3 .contentBox button {
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+}
+
+.contentBlock3 .contentBox .text {
+    font-family: "Roboto", sans-serif;
+    font-size: 4vw;
+    font-weight: 100;
+    line-height: 1;
+    text-align: right;
+    margin: 0 5px;
+    padding: 5px 10px;
+    text-shadow: 0 5px 20px rgb(0 0 0 / 10%);
+}
+
+.contentBlock3 .contentBox .text strong {
+    font-weight: 900;
+}
+
+.contentBlock3 .contentBox svg {
+    width: 80px;
+    height: 80px;
+    box-shadow: 0 5px 20px rgb(0 0 0 / 10%);
+}
+
+.contentBlock3 .boxObject
+
+.contentBlock3 .boxObject .object{
+    width: var(--width);
+    transform: scale(var(--scale));
+    back
+}
+
+/* ==========================flexible footer============================= */
+footer .contentBlockFooter{
+    background-color: #d9996b !important;
+}
+/* ==========================whiteLine============================= */
+
+
+.whiteLine {
+    position: absolute;
+    left: 50%;
+    width: 1px;
+    height: 5vw;
+    top: -6vw;
+    background-color: #fff;
+    pointer-events: none;
+    z-index: 110000;
+}
+
+.contentBlock3 .whiteLine {
+    top: 0vw;
+}
+.contentBlock4 .whiteLine {
+    top: 0.5vw;
+}
+.contentBlock5 .whiteLine {
+    top: 0.5vw;
+}
