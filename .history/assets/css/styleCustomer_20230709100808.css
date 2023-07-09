@@ -1,0 +1,359 @@
+/* ==========================contentBlock1============================= */
+/* .mainCustomerPage{
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+} */
+.contentBlock1 {
+    position: relative;
+    width: 100%;
+    background: #f9db3e;
+    overflow: hidden;
+}
+
+.contentBox {
+    transition: all 0.1s ease;
+}
+
+.contentBlock4 .contentBox {
+    transition: all 0.3s linear;
+}
+
+.contentBlock1 .obj-bg {
+    width: 100%;
+}
+
+.contentBlock1 .obj-icon {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    transition: all 5s cubic-bezier(0.17, 0.74, 0.34, 1.19);
+}
+
+.contentBlock1 .obj-icon img {
+    width: 100vw;
+    height: 100vh;
+}
+
+/* text benner */
+.contentBlock1 .textBanner {
+    position: absolute;
+    content: "";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    transform: translateY(-30px);
+}
+
+.contentBlock1 .textBanner .thisBox {
+    width: max-content;
+    --width: max-content;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 10vw;
+    font-weight: 700;
+    line-height: 1;
+    display: block;
+    padding: 0 2vw;
+    white-space: nowrap;
+}
+
+.contentBlock1 .textRow:nth-child(1) .thisBox {
+    animation: runText_toLeft 40s linear infinite;
+}
+.contentBlock1 .textRow:nth-child(1) {
+    transform: translateY(50px);
+}
+.contentBlock1 .textRow:nth-child(2) .thisBox {
+    animation: runText_toLeft 30s linear infinite;
+}
+.contentBlock1 .textRow:nth-child(2) {
+    transform: translateY();
+}
+
+.contentBlock1 .textRow:nth-child(3) .thisBox {
+    animation: runText_toRight 35s linear infinite;
+}
+
+.contentBlock1 .textRow:nth-child(3) {
+    transform: translateY(-30px);
+}
+
+.contentBlock1 .textBanner .thisBox large {
+    font-size: 150%;
+    -webkit-text-stroke: 4px #fff;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.contentBlock1 .textBanner .thisBox strong {
+    font-weight: 900;
+    -webkit-text-stroke: 4px #fff;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+@keyframes runText_toLeft {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(calc(var(--contentWidth)));
+    }
+}
+@keyframes runText_toRight {
+    from {
+        transform: translateX(calc(var(--contentWidth)));
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+/* ==========================contentBlock2============================= */
+.contentBlock2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 10vh 0 40vh 0;
+    gap: 5vw;
+    row-gap: 60vh;
+    background-color: #e3bbc3;
+}
+
+.contentBlock2::before {
+    position: absolute;
+    display: block;
+    content: "";
+    background-color: #e3bbc3;
+    width: 100%;
+    height: 7vw;
+    transform: skewY(-3deg);
+    left: 0;
+    bottom: -5vh;
+    z-index: 10;
+}
+
+.contentBlock2::after {
+    position: absolute;
+    display: block;
+    content: "";
+    background-color: #e3bbc3;
+    width: 100%;
+    height: 7vw;
+    transform: skewY(-3deg);
+    top: -3.5vw;
+    left: 0;
+    z-index: 10;
+}
+
+.contentBlock2 .boxCustomer {
+    position: relative;
+    width: 40%;
+    height: 60vh;
+    /* background-color: red; */
+    border: 1px solid #fff;
+    z-index: 11;
+}
+.contentBlock2 .boxCustomer::after {
+    position: absolute;
+    content: "";
+    top: 100%;
+    left: 50%;
+    width: 1px;
+    height: 60vh;
+    background-color: #fff;
+}
+.contentBlock2 .boxCustomer:nth-child(2n) {
+    transform: translateY(25vh);
+}
+
+.contentBlock2 .boxCustomer.last::after {
+    display: none;
+}
+
+.contentBlock2 .boxCustomer .imageLink {
+    position: absolute;
+    top: -15%;
+    left: 3%;
+    width: 94%;
+    height: 70%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.contentBlock2 .boxCustomer .imageLink .thumb {
+    width: 103%;
+    height: 103%;
+    transform: translate(-3%, -3%);
+    transition: all 0.5s ease-in;
+}
+.contentBlock2 .boxCustomer .imageLink:hover .thumb {
+    transform: translate(0%, -3%);
+    filter: brightness(110%);
+}
+
+.contentBlock2 .boxCustomer .name {
+    position: absolute;
+    bottom: 10%;
+    left: 8%;
+    font-size: 2.8vw;
+    text-transform: uppercase;
+    text-shadow: 0 10px 30px rgb(0 0 0 / 15%);
+    font-weight: 900;
+    line-height: 1;
+    padding: 15px 0 5px;
+    color: #fff;
+    text-align: left;
+    white-space: nowrap;
+    mix-blend-mode: difference;
+}
+
+.contentBlock2 .boxCustomer .label {
+    position: absolute;
+    bottom: 5%;
+    left: 8%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
+    padding: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #fff;
+    text-align: left;
+    white-space: nowrap;
+    mix-blend-mode: difference;
+}
+
+/* ==========================contentBlock3============================= */
+
+.contentBlock3 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #e08d62;
+}
+
+.contentBlock3::before {
+    position: absolute;
+    content: "";
+    pointer-events: none;
+    background-color: #e3bbc3;
+    width: 100%;
+    height: 6vw;
+    transform: skewY(-3deg);
+    top: -3vw;
+    left: 0;
+}
+
+.contentBlock3::after {
+    position: absolute;
+    content: "";
+    pointer-events: none;
+    background-color: #e3bbc3;
+    width: 100%;
+    height: 6vw;
+    transform: skewY(-3deg);
+    left: 0;
+    bottom: -3vw;
+    z-index: 10;
+}
+
+.contentBlock3 .contentBox {
+    position: absolute;
+    top: 30%;
+    max-width: 1280px;
+    color: #fff;
+    z-index: 100;
+}
+
+.contentBlock3 .contentBox .heading {
+    text-align: center;
+    font-size: 5vw;
+    font-weight: 100;
+    line-height: 1.2;
+    letter-spacing: 0;
+    margin: 20px 0;
+}
+
+.contentBlock3 .slide {
+    display: flex;
+    bac
+    
+}
+
+.contentBlock3 .slide .logoPic {
+    width: 33.33%;
+}
+
+/* ==========================flexible footer============================= */
+footer .contentBlockFooter {
+    background-color: #e3bbc3 !important;
+}
+footer .contentBlockFooter:after {
+    top: -6vw;
+}
+/* ==========================whiteLine============================= */
+
+.whiteLine {
+    position: absolute;
+    left: 50%;
+    width: 1px;
+    height: 5vw;
+    top: -6vw;
+    background-color: #fff;
+    pointer-events: none;
+    z-index: 110000;
+}
+
+.contentBlock3 .whiteLine {
+    top: 0vw;
+}
+
+
+#myIframe {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    overflow: hidden;
+    /* transition: all 0.5s ease-in; */
+}
+
+#myIframe.hide {
+    animation: hideSubPage 0.6s ease-in forwards;
+}
+#myIframe.show {
+    animation: showSubPage 0.6s ease-in forwards;
+}
+
+@keyframes hideSubPage {
+    from{
+        transform: translate(0, 0);
+    }
+    to{
+        transform: translate(-100%, 0);
+    }
+}
+@keyframes showSubPage {
+    from{
+        transform: translate(0, 100%);
+    }
+    to{
+        transform: translate(0, 0);
+    }
+}

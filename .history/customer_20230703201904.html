@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>BTQ</title>
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Reset CSS -->
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <!-- Style CSS -->
+        <link rel="stylesheet" href="./assets/css/headerFooter.css" />
+        <link rel="stylesheet" href="./assets/css/styleCustomer.css" />
+    </head>
+    <body>
+        <header>
+            <nav class="navigation">
+                <div class="box">
+                    <img
+                        src="./assets/images/icon-logo.svg"
+                        alt=""
+                        class="logo"
+                    />
+                    <span class="targetPage">
+                        <img
+                            src="./assets/images/imgOpenAns/dot.svg"
+                            alt=""
+                            class="dot"
+                        />
+                        <p class="namePage">Khách Hàng</p>
+                    </span>
+                </div>
+
+                <div class="navigationBar">
+                    <div class="lang">VI</div>
+                    <div class="iconBar" onclick="activeIconMenuBar(this)">
+                        <div class="background"></div>
+                        <div class="lineTop"></div>
+                        <div class="lineMid"></div>
+                        <div class="lineBot"></div>
+                    </div>
+                </div>
+                <div class="menu">
+                    <div class="bg-menu">
+                        <div class="color-bg-menu"></div>
+                    </div>
+                    <ul class="main-menu">
+                        <a href="./index.html">
+                            <li class="menuItem iconHome">
+                                <svg x="0px" y="0px" viewBox="0 0 50 36">
+                                    <path
+                                        fill="currentColor"
+                                        d="M25,0 15.017,10 15.017,6 7.031,6 7.031,18 0,25.043 1.412,26.457 25,2.828 48.588,26.457 50,25.043z"
+                                    ></path>
+                                    <path
+                                        fill="currentColor"
+                                        d="M7.031,26 7,36 42.896,36 42.896,26 25,8z"
+                                    ></path>
+                                </svg>
+                            </li>
+                        </a>
+                        <a href="./openAns.html"
+                            ><li class="menuItem">Lời Ngỏ</li></a
+                        >
+                        <a href="./service.html"
+                            ><li class="menuItem">Dịch Vụ</li></a
+                        >
+                        <a href="#!"><li class="menuItem">Khách Hàng</li></a>
+                        <a href="./contacts.html"
+                            ><li class="menuItem">Liên Hệ</li></a
+                        >
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main class="mainCustomerPage">
+            <div class="contentBlock1">
+                <div
+                    class="contentBox scrollElm"
+                    data-distance="250"
+                    data-speed="0.2"
+                    data-trend="down"
+                    data-first="true"
+                >
+                    <img
+                        src="./assets/images/imgContacts/contact_svg2.svg"
+                        alt=""
+                        class="obj-bg"
+                    />
+                    <div class="obj-icon">
+                        <img
+                            src="./assets/images/imgContacts/contact_svg.svg"
+                            alt=""
+                            class="icon"
+                        />
+                    </div>
+                    <div class="textBanner">
+                        <div class="textRow">
+                            <div class="thisBox" style="--contentWidth: 0px">
+                                <strong>COOPERATION</strong>
+                                CONTACT<large>BTQ</large>COLLABORATION
+                                <strong>COOPERATION</strong>
+                                CONTACT<large>BTQ</large>COLLABORATION
+                            </div>
+                        </div>
+                        <div class="textRow">
+                            <div class="thisBox" style="--contentWidth: 10px">
+                                <large>3GRAPHIC</large>TEAMWORK
+                                <strong>COMPANION</strong>
+                                <large>3GRAPHIC</large>TEAMWORK
+                                <strong>COMPANION</strong>
+                            </div>
+                        </div>
+                        <div class="textRow">
+                            <div class="thisBox" style="--contentWidth: 20px">
+                                PARTNERS<large>THANK YOU</large>SUCCESSFUL
+                                <strong>DEVELOPMENT</strong> PARTNERS<large
+                                    >THANK YOU</large
+                                >SUCCESSFUL <strong>DEVELOPMENT</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contentBlock2">
+                <div
+                    class="boxCustomer"
+                    data-img1="./imagesCompany/NHO/1.jpg"
+                    data-img2="./imagesCompany/NHO/2.jpg"
+                    data-img3="./imagesCompany/NHO/3.jpg"
+                    data-name="N.H.O JSC COMPANY"
+                    data-label="Website N.H.O JSC"
+                >
+                    <p class="name">N.H.O JSC COMPANY</p>
+                    <p class="label">Website N.H.O JSC</p>
+                    <a
+                        class="imageLink scrollElm"
+                        data-distance="250"
+                        data-speed="0.2"
+                        data-trend="down"
+                    >
+                        <img
+                            src="./imagesCompany/NHO/thumb.jpg"
+                            alt=""
+                            class="thumb"
+                        />
+                    </a>
+                </div>
+                <div
+                    class="boxCustomer"
+                    data-img1="./imagesCompany/CANAL/1.jpg"
+                    data-img2="./imagesCompany/CANAL/2.jpg"
+                    data-img3="./imagesCompany/CANAL/3.jpg"
+                    data-name="Canal District"
+                    data-label="Website Canal District"
+                >
+                    <p class="name">CANAL DISTRICT</p>
+                    <p class="label">Website CANAL DISTRICT</p>
+                    <a
+                        class="imageLink scrollElm"
+                        data-distance="250"
+                        data-speed="0.2"
+                        data-trend="down"
+                    >
+                        <img
+                            src="./imagesCompany/CANAL/thumb.jpeg"
+                            alt=""
+                            class="thumb"
+                        />
+                    </a>
+                </div>
+                <div
+                    class="boxCustomer"
+                    data-img1="./imagesCompany/MERRYLAND/1 .jpeg"
+                    data-img2="./imagesCompany/MERRYLAND/2.jpg"
+                    data-img3="./imagesCompany/MERRYLAND/3.jpg"
+                    data-name="Canal District"
+                    data-label="Website Canal District"
+                >
+                    <p class="name">Merryland Quy Nhơn</p>
+                    <p class="label">Website Merryland</p>
+                    <a
+                        class="imageLink scrollElm"
+                        data-distance="250"
+                        data-speed="0.2"
+                        data-trend="down"
+                    >
+                        <img
+                            src="./imagesCompany/MERRYLAND/thumb.jpg"
+                            alt=""
+                            class="thumb"
+                        />
+                    </a>
+                </div>
+                <div
+                    class="boxCustomer"
+                    data-img1="./imagesCompany/SALTO/1.jpg"
+                    data-img2="./imagesCompany/SALTO/2.jpg"
+                    data-img3="./imagesCompany/SALTO/3.jpg"
+                    data-name="Salto Residence"
+                    data-label="Website Canal District"
+                >
+                    <p class="name">Salto Residence</p>
+                    <p class="label">Website Salto Residence</p>
+                    <a
+                        class="imageLink scrollElm"
+                        data-distance="250"
+                        data-speed="0.2"
+                        data-trend="down"
+                    >
+                        <img
+                            src="./imagesCompany/SALTO/thumb.jpeg"
+                            alt=""
+                            class="thumb"
+                        />
+                    </a>
+                </div>
+                <div class="boxCustomer">
+                    <p class="name">Merryland Quy Nhơn</p>
+                    <p class="label">Website Merryland</p>
+                    <a
+                        class="imageLink scrollElm"
+                        data-distance="250"
+                        data-speed="0.2"
+                        data-trend="down"
+                    >
+                        <img
+                            src="./imagesCompany/MERRYLAND/thumb.jpg"
+                            alt=""
+                            class="thumb"
+                        />
+                    </a>
+                </div>
+                <div class="boxCustomer">
+                    <p class="name">Salto Residence</p>
+                    <p class="label">Website Salto Residence</p>
+                    <a
+                        class="imageLink scrollElm"
+                        data-distance="250"
+                        data-speed="0.2"
+                        data-trend="down"
+                    >
+                        <img
+                            src="./imagesCompany/SALTO/thumb.jpeg"
+                            alt=""
+                            class="thumb"
+                        />
+                    </a>
+                </div>
+                <div class="boxCustomer last">
+                    <p class="name">LDG Investment</p>
+                    <p class="label">Website LDG Investment</p>
+                    <a
+                        class="imageLink scrollElm"
+                        data-distance="250"
+                        data-speed="0.2"
+                        data-trend="down"
+                    >
+                        <img
+                            src="./imagesCompany/LDG-Invesment/thumb.jpg"
+                            alt=""
+                            class="thumb"
+                        />
+                    </a>
+                </div>
+                <div class="boxCustomer last">
+                    <p class="name">Dieu Tuong Am</p>
+                    <p class="label">Website Dieu Tuong Am</p>
+                    <a
+                        class="imageLink scrollElm"
+                        data-distance="250"
+                        data-speed="0.2"
+                        data-trend="down"
+                    >
+                        <img
+                            src="./imagesCompany/dieutuongam/thumb.jpeg"
+                            alt=""
+                            class="thumb"
+                        />
+                    </a>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="contentBlockFooter">
+                <div
+                    class="contentBox scrollElm"
+                    data-distance="70"
+                    data-speed="0.15"
+                    data-trend="up"
+                >
+                    <a href="#!" class="facebookLink">
+                        <svg x="0px" y="0px" viewBox="0 0 40 50">
+                            <path
+                                fill="currentColor"
+                                d="M27.4,11.1h-5V7.8c0-1.2,0.8-1.5,1.4-1.5c0.6,0,3.5,0,3.5,0V0.8h-4.9c-5.4,0-6.7,4.1-6.7,6.7v3.6h-3.1v5.6
+                            h3.1c0,7.2,0,15.9,0,15.9h6.6c0,0,0-8.8,0-15.9h4.4L27.4,11.1z"
+                            ></path>
+                        </svg>
+                    </a>
+                    <p class="copyRight">
+                        2004 - 2023 © <strong>BTQ</strong> COMPANY
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <iframe
+            src="./company.html"
+            id="myIframe"
+            class="hide"
+            width="100%"
+            title="W3Schools Free Online Web Tutorials"
+        >
+        </iframe>
+        <script src="./app_OpenAns.js"></script>
+        <script src="./app_company.js"></script>
+    </body>
+</html>
