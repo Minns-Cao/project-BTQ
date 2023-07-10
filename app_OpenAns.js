@@ -166,6 +166,9 @@ window.addEventListener("scroll", (e) => {
 });
 
 function ScrollAnimation(elm, distance, speed, trend, first) {
+    if (window.innerWidth < 768) {
+        return;
+    }
     window.addEventListener("scroll", function () {
         //khoảng di chuyển
         let x = (window.innerHeight - elm.getBoundingClientRect().top) * speed;
@@ -248,3 +251,5 @@ function showLoading(event) {
         }
     }, 1000);
 }
+
+// ======================CheckScreen=========================
