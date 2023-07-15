@@ -16,6 +16,7 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -477,3 +478,95 @@ footer .contentBlockFooter .contentBox .copyRight{
 footer .contentBlockFooter .contentBox .copyRight strong {
     font-weight: 900;
 }
+
+/* =======================ObjectIcon======================= */
+
+.contentBlock1 .obj-icon {
+    animation: xuatHien 0.9s ease-in-out 1 ;
+}
+
+@keyframes xuatHien {
+    0%{
+        transform: scale(1.2);
+        opacity: 0;
+    }
+    70%{
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* =======================MoveDown======================= */
+.line-color {
+    fill: transparent;
+    stroke: #fff;
+    transition: all 0.3s ease-in-out;
+}
+.moveDown {
+    position: fixed;
+    bottom: 50px;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, 0);
+    z-index: 1000;
+    color: #000;
+    transition: all 0.3s ease-in-out;
+}
+
+.moveDown:hover .line-color {
+    fill: #fcd62c;
+    stroke: #fcd62c;
+}
+
+.moveUp {
+    position: fixed;
+    bottom: 50px;
+    left: 95%;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, 0);
+    z-index: 1000;
+    color: #000;
+    transition: all 0.3s ease-in-out;
+}
+
+.moveUp.show {
+    animation: show 0.5s linear forwards;
+}
+.moveUp.hide {
+    animation: hide 0.5s linear forwards;
+}
+.moveDown.show {
+    animation: show 0.5s linear forwards;
+}
+.moveDown.hide {
+    animation: hide 0.5s linear forwards;
+}
+
+.moveUp:hover .line-color {
+    fill: #fcd62c;
+    stroke: #fcd62c;
+}
+
+@keyframes show {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes hide{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+

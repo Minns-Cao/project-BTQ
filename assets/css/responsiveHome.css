@@ -1,6 +1,9 @@
 /* =================Responsive================== */
 
 @media (max-width: 768px) {
+    .enterbutton {
+        transform: translate(-50%, -177%);
+    }
 }
 
 /* mobile */

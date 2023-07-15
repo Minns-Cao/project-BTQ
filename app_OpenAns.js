@@ -112,25 +112,29 @@ thisBox_list.forEach((thisBox) => {
     thisBox.style.setProperty("--contentWidth", `${-widthContent + 9.5}px`);
 });
 
-// ======================EnterButton=========================
+// ======================Object icon=========================
 let objIcon = document.querySelector(".obj-icon");
-if (objIcon) {
-    objIcon.addEventListener("mousemove", (e) => {
-        let xValue = e.clientX;
-        let yValue = e.clientY;
-        let rectOfobjIcon = objIcon.getBoundingClientRect();
-        let yValueBtn = rectOfobjIcon.top + rectOfobjIcon.height / 2;
-        let xValueBtn = rectOfobjIcon.left + rectOfobjIcon.width / 2;
-        let speed = 0.125;
-        objIcon.style.transform = `translate(${
-            -(xValue - xValueBtn) * speed
-        }px,${-(yValue - yValueBtn) * speed}px) `;
-    });
+setTimeout(()=>{
+    if (objIcon) {
+        objIcon.addEventListener("mousemove", (e) => {
+            let xValue = e.clientX;
+            let yValue = e.clientY;
+            let rectOfobjIcon = objIcon.getBoundingClientRect();
+            let yValueBtn = rectOfobjIcon.top + rectOfobjIcon.height / 2;
+            let xValueBtn = rectOfobjIcon.left + rectOfobjIcon.width / 2;
+            let speed = 0.125;
+            objIcon.style.transform = `translate(${
+                -(xValue - xValueBtn) * speed
+            }px,${-(yValue - yValueBtn) * speed}px) `;
+        });
+    
+        objIcon.addEventListener("mouseout", () => {
+            objIcon.style.transform = `translate(0,0)`;
+        });
+    }
+},1000)
 
-    objIcon.addEventListener("mouseout", () => {
-        objIcon.style.transform = `translate(0,0)`;
-    });
-}
+
 // ======================ScrollAnimation=========================
 let logoNav = document.querySelector("header .navigation .logo");
 let targetPage = document.querySelector("header .navigation .targetPage");
@@ -253,4 +257,33 @@ function showLoading(event) {
     }, 1000);
 }
 
-// ======================CheckScreen=========================
+// ======================Sroll-to-Top-down=========================
+window.addEventListener("scroll", (e) => {
+    let heightOfFooter = document.querySelector("footer").offsetHeight;
+    //Vị trí của scroll (không tính footer)
+    let targetScroll =
+        (window.pageYOffset /
+            (document.body.offsetHeight -
+                heightOfFooter -
+                window.innerHeight)) *
+        100;
+
+    console.log(targetScroll);
+    let moveUp = document.querySelector(".moveUp");
+    let moveDown = document.querySelector(".moveDown");
+    if (targetScroll > 0){
+        moveUp.classList.add("show");
+        moveUp.classList.remove("hide");
+    } else{
+        moveUp.classList.add("hide");
+        moveUp.classList.remove("show");
+    }
+    // =========
+    if (targetScroll > 5){
+        moveDown.classList.add("hide");
+        moveDown.classList.remove("show");
+    } else {
+        moveDown.classList.add("show");
+        moveDown.classList.remove("hide");
+    }
+});
