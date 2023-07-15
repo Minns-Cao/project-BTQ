@@ -1,6 +1,6 @@
 /* =================Responsive================== */
 
-@media (max-width: 768px) {
+@media (max-width: 968px) {
     .pointer {
         display: none;
     }
@@ -83,14 +83,34 @@
     .navigation .onClick.iconBar:hover .lineBot {
         transform: rotate(-45deg);
     }
-    
+
+    .heading {
+        font-size: 5.5vw !important;
+    }
+
+    .desc {
+        font-size: 17px !important;
+        text-align: justify;
+    }
+
+    /* foooter */
+    footer .contentBlockFooter {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    footer .contentBlockFooter .contentBox {
+        padding-top: 0;
+    }
+
     /* =============Contentblock1=============== */
     .contentBlock1 {
-        height:70vh;
+        height: 70vh;
     }
     .contentBlock1 .obj-bg {
-        width: auto;
+        width: 100%;
         height: 100%;
+        transform: scale(3.5) translateX(-15%);
     }
     .contentBlock1 .obj-icon img {
         height: 70vh;
@@ -109,15 +129,14 @@
         transform: translateY(0);
     }
 
-    #customerPage .contentBlock2 .boxCustomer .imageLink{
+    #customerPage .contentBlock2 .boxCustomer .imageLink {
         top: 5%;
     }
 
     #customerPage .contentBlock2 .boxCustomer .imageLink .thumb {
-        object-fit:scale-down;
+        object-fit: scale-down;
         width: 103%;
     }
-
 
     #customerPage .contentBlock2 .boxCustomer::after {
         top: 105%;
@@ -127,6 +146,226 @@
     #customerPage .contentBlock3 {
         height: 50vh;
     }
+
+    /* =============OpenAns Page=============== */
+    #openAnsPage .contentBlock1 .textBanner {
+        top: 40px;
+    }
+
+    #openAnsPage .contentBlock2 {
+        align-items: center;
+    }
+
+    #openAnsPage .contentBlock2 .contentBox {
+        width: 90%;
+        margin-top: 5vw;
+        padding: 20px;
+    }
+
+    #openAnsPage .contentBlock2 .contentBox .heading {
+        font-size: 5.5vw;
+    }
+
+    #openAnsPage .contentBlock2 .contentBox .desc {
+        font-size: 17px;
+        text-align: justify;
+    }
+
+    .contentBlock2::before {
+        bottom: -2vh;
+    }
+
+    #openAnsPage .contentBlock3 {
+        align-items: center;
+    }
+
+    #openAnsPage .contentBlock3 .contentBox {
+        margin-top: 0;
+        margin-left: 0;
+        width: 80%;
+    }
+
+    #openAnsPage .contentBlock3 .contentBox .heading {
+        font-size: 5.5vw;
+    }
+
+    #openAnsPage .contentBlock3 .contentBox .desc {
+        font-size: 17px;
+        text-align: justify;
+    }
+
+    #openAnsPage .contentBlock3 .contentBox .hotline {
+        font-size: 17px;
+    }
+
+    #openAnsPage .contentBlock4 {
+        align-items: center;
+    }
+
+    #openAnsPage .contentBlock4 .contentBox {
+        transform: scale(2.5);
+    }
+
+    #openAnsPage .contentBlock4 .contentBox svg {
+        width: 40px;
+        height: 40px;
+    }
+
+    #openAnsPage .contentBlock5 {
+        align-items: center;
+        overflow: hidden;
+        height: 70vh;
+    }
+
+    #openAnsPage .contentBlock5 .contentBox {
+        width: 90%;
+    }
+
+    #openAnsPage .contentBlock5 .contentBox h3 {
+        width: auto;
+    }
+
+    #openAnsPage .contentBlock5 .contentBox li {
+        flex-wrap: wrap;
+        width: auto;
+    }
+
+    /* =============Service Page=============== */
+    #servicePage .contentBlock2 {
+        align-items: center;
+        height: 130vh;
+    }
+
+    #servicePage .contentBlock2 .contentBox {
+        width: 80%;
+    }
+
+    #servicePage .contentBlock2 .contentBox .listContent {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .listContent .headingList {
+        font-size: 130% !important;
+    }
+    .listContent li {
+        width: 80vw !important;
+        max-width: unset !important;
+        font-size: 110% !important;
+    }
+
+    #servicePage .contentBlock3 {
+        height: 350px;
+    }
+
+    #servicePage .contentBlock3 .contentBox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        margin-top: 0;
+    }
+
+    #servicePage .contentBlock3 .obj-bg {
+        width: auto;
+        height: 100%;
+    }
+
+    #servicePage .contentBlock3 .contentBox .text {
+        font-size: 300%;
+    }
+
+    #servicePage .contentBlock4 {
+        align-items: center;
+    }
+
+    #servicePage .contentBlock4 .contentBox {
+        width: 80%;
+    }
+
+    #servicePage .contentBlock4 .contentBox .listContent {
+        flex-direction: column;
+    }
+
+    #servicePage .contentBlock5::after {
+        height: 16vw;
+    }
+
+    #servicePage .contentBlock5 {
+        align-items: center;
+    }
+
+    #servicePage .contentBlock5 .contentBox {
+        width: 80%;
+    }
+
+    #servicePage .contentBlock6::after {
+        height: 16vw;
+    }
+
+    .contentBlock6 {
+        align-items: center;
+    }
+
+    .contentBlock6 .contentBox {
+        width: 80%;
+    }
+
+    #servicePage .contentBlock6::after {
+        height: 16vw;
+    }
+
+    #servicePage .contentBlock6::before {
+        height: 16vw;
+    }
+
+    #servicePage .contentBlock7 {
+        align-items: center;
+    }
+
+    #servicePage .contentBlock7 .contentBox {
+        width: 80%;
+        top: unset;
+    }
+
+    #servicePage .contentBlock7 .contentBox h3 {
+        width: auto;
+    }
+
+    #servicePage .contentBlock7 .contentBox li {
+        flex-wrap: wrap;
+    }
+
+    /* =============Contacts Page=============== */
+    #contactsPage .contentBlock2 .contentBox {
+        top: unset;
+        left: unset;
+        margin: 0;
+    }
+
+    #contactsPage .contentBlock2 {
+        height: 70vh;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    #contactsPage .contentBlock2 .contentBox h3 {
+        width: auto;
+    }
+
+    #contactsPage .contentBlock2 .contentBox li {
+        flex-wrap: wrap;
+    }
+
+    #contactsPage .contentBlock3 {
+        height: 50vh;
+        overflow: hidden;
+        align-items: center;
+    }
+
+    #contactsPage .contentBlock3 .contentBox .text {
+        font-size: 350%;
+    }
 }
 
 /* mobile */
@@ -135,8 +374,6 @@
     .heightMB {
         height: var(--heightMB) !important;
     }
-
-    
 
     .navigation .logo {
         width: 38%;
@@ -179,5 +416,25 @@
     /* =============CUSTOMERPAGE=============== */
     #customerPage .contentBlock2 .boxCustomer {
         height: 35vh;
+    }
+
+    #openAnsPage .contentBlock2 {
+        height: 100vh !important;
+    }
+
+    #openAnsPage .contentBlock3 {
+        height: 120vh;
+    }
+}
+
+@media (max-width: 430px) {
+    #openAnsPage .contentBlock2 {
+        height: 1100px !important;
+    }
+    #openAnsPage .contentBlock3 {
+        height: 1500px;
+    }
+    #servicePage .contentBlock2 {
+        height: 140vh;
     }
 }

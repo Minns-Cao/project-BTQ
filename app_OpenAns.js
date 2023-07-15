@@ -167,6 +167,7 @@ window.addEventListener("scroll", (e) => {
 
 function ScrollAnimation(elm, distance, speed, trend, first) {
     if (window.innerWidth < 768) {
+        console.log("renturn");
         return;
     }
     window.addEventListener("scroll", function () {
