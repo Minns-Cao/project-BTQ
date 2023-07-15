@@ -102,6 +102,20 @@
     footer .contentBlockFooter .contentBox {
         padding-top: 0;
     }
+    /* =============TextRun=============== */
+    .contentBlock1 .textBanner {
+        margin-top: 10%;
+        gap: 0;
+    }
+    .contentBlock1 .textRow:nth-child(1){
+        transform: unset;
+    }
+    .contentBlock1 .textRow:nth-child(2){
+        transform: unset;
+    }
+    .contentBlock1 .textRow:nth-child(3){
+        transform: unset;
+    }
 
     /* =============Contentblock1=============== */
     .contentBlock1 {
@@ -112,6 +126,10 @@
         height: 100%;
         transform: scale(3.5) translateX(-15%);
     }
+    #customerPage .contentBlock1 .obj-bg {
+        transform: scale(2.5) translateX(0%);
+    }
+    
     .contentBlock1 .obj-icon img {
         height: 70vh;
     }
@@ -337,18 +355,19 @@
     }
 
     /* =============Contacts Page=============== */
-    #contactsPage .contentBlock2 .contentBox {
-        top: unset;
-        left: unset;
-        margin: 0;
-    }
 
     #contactsPage .contentBlock2 {
-        height: 70vh;
+        height: 50vh;
         align-items: center;
         overflow: hidden;
     }
 
+    #contactsPage .contentBlock2 .contentBox {
+        width: 90%;
+        top: unset;
+        left: unset;
+        margin: 0;
+    }
     #contactsPage .contentBlock2 .contentBox h3 {
         width: auto;
     }
@@ -436,5 +455,8 @@
     }
     #servicePage .contentBlock2 {
         height: 140vh;
+    }
+    #contactsPage .contentBlock2 {
+        height: 70vh;
     }
 }
